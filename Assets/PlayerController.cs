@@ -7,20 +7,16 @@ public class PlayerController : MonoBehaviour
     public GameObject groundChecker ;
     public LayerMask whatIsGround;
 
-    float maxSpeed = 5.0f;
+    float maxSpeed = 10.0f;
     bool isOnGround = false;
 
-    //Create a reference to the Rigidbody2D so we can manipulate it
     Rigidbody2D playerObject;
-    
-    //Start is called before the first frame update
+   
     void Start()
     {
-        //Find the Rigidbody2D component that is attached to the same object as this script
         playerObject = GetComponent<Rigidbody2D>();
     }
 
-    //Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift))
