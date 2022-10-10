@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     float timeToNextSpawn; //Tracks how long we should wait beofre spawning a new object
     float timeSinceLastSpawn = 0.0f; //Tracks the time since we last spawned something 
 
-    public float minSpawnTime = 0.05f; //Minimum amount of time between spawninig objects
+    public float minSpawnTime = 0.5f; //Minimum amount of time between spawninig objects
     public float maxSpawnTime = 3.0f; //Maximum 
 
     // Start is called before the first frame update
