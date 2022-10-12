@@ -28,7 +28,7 @@ public class Spawner : MonoBehaviour
         timeSinceLastSpawn = timeSinceLastSpawn + Time.deltaTime;
 
         //if weve counted past the amount of time we need to wait
-        if (timeSinceLastSpawn > timeToNextSpawn);
+        if (timeSinceLastSpawn > timeToNextSpawn)
         {
             //use random.range to pick a number between 0 and the amount of items we have on our object list
             int selection = Random.Range(0, objectsToSpawn.Length);
